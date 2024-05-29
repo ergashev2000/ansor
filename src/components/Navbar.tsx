@@ -85,7 +85,7 @@ export default function Navbar() {
           </button>
           <ul
             className={`uppercase flex-col flex justify-center transition-all duration-500 items-center gap-5 text-2xl text-center h-screen w-full bg-black text-white absolute top-0 left-0 pt-10 ${
-              !isOpen ? "-translate-y-full" : "-translate-y-0"
+              !isOpen ? "-translate-y-[calc(100%+20px)]" : "-translate-y-0"
             }`}
           >
             <button
