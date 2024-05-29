@@ -2,32 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+
+html {
+    scroll-behavior: smooth
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.hero_bg_img {
+    background: url('../assets/images/bg.png') no-repeat top center;
+    background-size: cover;
+    position: relative;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero_bg_img::before {
+    position: absolute;
+    background-color: black;
+    opacity: .5;
+    content: '';
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bg_gradient_white{
+background: linear-gradient(167deg, rgba(255, 255, 255, 1) 16%, rgba(224, 224, 224, 1) 58%);
+}
+
+.bg_contact {
+    background: url('../assets/images/bg.png') no-repeat top center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg_contact::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #fff !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    opacity: .9 !important;
+    border: 1px solid rgb(177, 177, 177) !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 22px !important;
+    color: #000 !important;
+}
+
+.product_swiper .swiper-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    height: fit-content;
+}
+
+.product_swiper .swiper-slide {
+    width: 100% !important;
+    border: 1px transparent solid !important;
+    margin: 4px 0;
+}
+
+.product_swiper .swiper-slide-thumb-active {
+    border: 1px gray solid !important;
+    border-radius: 5px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background-color: black;
+}
+
+.swiper-pagination span {
+    background-color: black;
+    width: 20px;
+    border-radius: 2px;
+    height: 4px;
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}  
+
+
+
+
+/* Gallery.module.css */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
