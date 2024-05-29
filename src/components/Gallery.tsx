@@ -54,10 +54,10 @@ export default function Gallery() {
             Gallery
           </h2>
         </div>
-        <CustomSwiper between={30} pagination slidesNumber={2} >
+        <CustomSwiper between={30} pagination slidesNumber={2}>
           {data.map(item => (
             <div
-              className="w-full h-[400px] lg:h-[600px] rounded-2xl overflow-hidden cursor-pointer relative"
+              className="w-full h-[400px] lg:h-[600px] rounded-2xl overflow-hidden cursor-pointer relative border-2 border-gray-300"
               key={item.id}
               onClick={() => setSelectedImage(item)}
             >
@@ -70,7 +70,7 @@ export default function Gallery() {
                 title={item.title}
                 width={700}
                 height={700}
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full "
               />
             </div>
           ))}

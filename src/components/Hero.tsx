@@ -5,6 +5,9 @@ import Money from "@/assets/images/money.svg";
 import Guarantee from "@/assets/images/guarantee.svg";
 import Certificate from "@/assets/images/certificate.svg";
 
+import "animate.css";
+
+
 export default function Hero() {
   return (
     <section className="hero_bg_img h-screen w-full flex items-center relative">
@@ -42,8 +45,10 @@ export default function Hero() {
       </div>
 
       <div className="flex items-center container mx-auto ">
-        <div className="w-full xl:w-1/2 text-white space-x-2 xl:space-y-6 z-10">
-          <h1 className="text-3xl xl:text-6xl font-semibold pl-2">Ansor Safety</h1>
+        <div className="w-full xl:w-1/2 text-white space-x-2 xl:space-y-6 z-10 animate__fadeInUp">
+          <h1 className="text-3xl xl:text-6xl font-semibold pl-2">
+            Ansor Safety
+          </h1>
           <p>
             Mahsulotning O‘zbekiston Respublikasi Milliy sertifikatlashtirish
             tizimi talablariga muvofiqligini baholash

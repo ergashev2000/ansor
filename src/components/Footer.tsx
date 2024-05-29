@@ -2,6 +2,31 @@ import { FacebookIcon, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
+import Telegram from "@/assets/images/icons8-telegram.svg";
+
+const links = [
+  {
+    id: 1,
+    icon: <Instagram />,
+    url: "http://instagram.com",
+  },
+  {
+    id: 2,
+    icon: <Youtube />,
+    url: "http://toutube.com",
+  },
+  {
+    id: 3,
+    icon: <FacebookIcon />,
+    url: "http://facebook.com",
+  },
+  {
+    id: 4,
+    icon: <Telegram />,
+    url: "http://telegram.me",
+  },
+];
+
 export default function Footer() {
   return (
     <footer>
@@ -14,27 +39,15 @@ export default function Footer() {
             <li className="text-sm text-white">
               Bizni ijtimoiy tarmoqlarimiz:{" "}
             </li>
-            <li>
-              <Link href={"/"}>
-                <div className="bg-white flex justify-center items-center rounded shadow-sm border w-7 h-7 border-gray-300 hover:bg-transparent transition-all duration-300">
-                  <Instagram />
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"}>
-                <div className="bg-white flex justify-center items-center rounded shadow-sm border w-7 h-7 border-gray-300 hover:bg-transparent transition-all duration-300">
-                  <Youtube />
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"}>
-                <div className="bg-white flex justify-center items-center rounded shadow-sm border w-7 h-7 border-gray-300 hover:bg-transparent transition-all duration-300">
-                  <FacebookIcon />
-                </div>
-              </Link>
-            </li>
+            {links.map(link => (
+              <li key={link.id}>
+                <Link href={link.url}>
+                  <div className="bg-white hover:text-white flex justify-center items-center rounded shadow-sm border w-7 h-7 border-gray-300 hover:bg-transparent transition-all duration-300">
+                    {link.icon}
+                  </div>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

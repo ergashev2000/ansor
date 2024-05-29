@@ -7,7 +7,7 @@ import Img2 from "@/assets/images/img/10.jpg";
 export default function About() {
   return (
     <section id="about">
-      <div className="container mx-auto py-10 lg:py-28">
+      <div className="container mx-auto py-10 lg:py-14">
         <div>
           <h2 className="text-2xl lg:text-4xl font-semibold text-center py-10">
             KOMPANIYA HAQIDA
@@ -44,7 +44,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="lg:block hidden h-[350px] border-2 border-gray-300 p-2 rounded-2xl">
+            <div className="lg:block hidden xl:h-[320px] 2xl:h-[350px] border-2 border-gray-300 p-2 rounded-2xl">
               <Image
                 src={Img2}
                 alt="Ansor Safety"

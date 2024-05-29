@@ -42,7 +42,7 @@ const services = [
 
 export default function Goal() {
   return (
-    <section className="py-20" id="goal">
+    <section className="py-10" id="goal">
       <div className="container mx-auto">
         <div className="pb-14 space-y-4 text-center mx-auto">
           <h2 className=" text-2xl lg:text-4xl font-semibold uppercase text-center">
