@@ -21,7 +21,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const { name, phone, msg } = formData;
-    const message = `Name: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
+    const message = `Ism va Familiya: ${name}\Telefon raqam: ${phone}\nXabar: ${msg}`;
 
     const telegramApiUrl = `https://api.telegram.org/bot7237585488:AAFZ_JbYJCOoZj5bzsCuYoVC0x1RoHp3080/sendMessage`;
     const chatId = "50939909";

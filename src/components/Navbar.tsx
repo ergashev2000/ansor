@@ -49,6 +49,45 @@ export default function Navbar() {
     setIsOpen(prev => !prev);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const menu = menus.find(
+                menu => menu.slug === `#${entry.target.id}`
+              );
+              if (menu) {
+                setHash(menu.id);
+              }
+            }
+          });
+        },
+        { threshold: 0.7 }
+      );
+
+      menus.forEach(menu => {
+        if (menu.slug.startsWith("#")) {
+          const section = document.querySelector(menu.slug);
+          if (section) {
+            observer.observe(section);
+          }
+        }
+      });
+
+      return () => {
+        observer.disconnect();
+      };
+    };
+
+    handleScroll();
+
+    return () => {
+      const observer = new IntersectionObserver(() => {});
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <header className="container mx-auto fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full">
@@ -71,10 +110,10 @@ export default function Navbar() {
                 <li key={menu.id}>
                   <Link href={menu.slug}>
                     <div
-                      className={`bg-black/80 backdrop-blur xl:text-xs 2xl:text-base px-4 py-2 rounded-full transition-all duration-300 ${
-                      menu.id === hash
+                      className={`backdrop-blur xl:text-xs 2xl:text-base px-4 py-2 rounded-full transition-all duration-300 ${
+                        menu.id === hash
                           ? "bg-primary hover:opacity-70"
-                          : ""
+                          : "bg-black/50"
                       }`}
                       onClick={() => setHash(menu.id)}
                     >
