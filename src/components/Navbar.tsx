@@ -53,7 +53,7 @@ export default function Navbar() {
   return (
     <header className="container mx-auto fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full">
       <div className="relative">
-        <div className="backdrop-blur bg-black/10 filter w-full flex justify-between items-center rounded-sm lg:rounded-full pr-2 lg:mt-2 max-lg:py-5">
+        <div className="backdrop-blur bg-black/10 filter w-full flex justify-between items-center rounded-sm lg:rounded-full pr-2 lg:mt-2 max-lg:py-2">
           <Link href="/">
             <div className="h-16">
               <Image
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <li key={menu.id}>
                   <Link href={menu.slug}>
                     <div
-                      className={`backdrop-blur xl:text-xs 2xl:text-base px-4 py-2 rounded-full transition-all duration-300 ${
+                      className={`bg-black/80 backdrop-blur xl:text-xs 2xl:text-base px-4 py-2 rounded-full transition-all duration-300 ${
                       menu.id === hash
                           ? "bg-primary hover:opacity-70"
                           : ""
@@ -88,7 +88,7 @@ export default function Navbar() {
         </div>
         <nav className="">
           <button
-            className="absolute right-2 top-1/2 -translate-y-1/2 text-white lg:hidden"
+            className="absolute right-2 top-1/2 -translate-y-1/2 text-black lg:hidden"
             onClick={handleOpenMenu}
           >
             <Menu size={44} />

@@ -24,7 +24,7 @@ export default function Contact() {
     const message = `Name: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
 
     const telegramApiUrl = `https://api.telegram.org/bot7237585488:AAFZ_JbYJCOoZj5bzsCuYoVC0x1RoHp3080/sendMessage`;
-    const chatId = "1501787525";
+    const chatId = "50939909";
 
     try {
       const response = await fetch(telegramApiUrl, {
