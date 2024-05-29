@@ -13,7 +13,7 @@ export default function About() {
             KOMPANIYA HAQIDA
           </h2>
         </div>
-        <div className="flex gap-10 max-lg:flex-col items-start lg:h-[700px]">
+        <div className="flex gap-10 max-lg:flex-col items-start lg:h-[710px]">
           <div className="lg:w-1/2 h-full border-2 border-gray-300 p-2 rounded-2xl">
             <Image
               src={Img}
@@ -24,7 +24,7 @@ export default function About() {
             />
           </div>
 
-          <div className="space-y-5 lg:w-1/2 h-full flex flex-col justify-between">
+          <div className="space-y-4 lg:w-1/2 h-full flex flex-col justify-between">
             <div className="lg:h-2/3 ">
               <h2 className="text-3xl 2x:text-4xl font-bold text-primary">
                 “Ansor Safety” MCHJ
@@ -44,7 +44,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="lg:block hidden xl:h-[320px] 2xl:h-[350px] border-2 border-gray-300 p-2 rounded-2xl text-lg">
+            <div className="lg:block hidden xl:h-[320px] 2xl:h-[300px] border-2 border-gray-300 p-2 rounded-2xl text-lg">
               <Image
                 src={Img2}
                 alt="Ansor Safety"
