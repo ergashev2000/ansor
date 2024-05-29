@@ -7,9 +7,9 @@ import Img2 from "@/assets/images/img/10.jpg";
 export default function About() {
   return (
     <section id="about">
-      <div className="container mx-auto py-10 lg:py-14 mt-8">
+      <div className="container mx-auto py-10 px-2 lg:pb-14 lg:pt-20">
         <div>
-          <h2 className="text-2xl lg:text-4xl font-semibold text-center py-10">
+          <h2 className="text-2xl lg:text-4xl font-semibold text-center py-10 text-primary">
             KOMPANIYA HAQIDA
           </h2>
         </div>
@@ -29,13 +29,13 @@ export default function About() {
               <h2 className="text-3xl 2x:text-4xl font-bold text-primary">
                 “Ansor Safety” MCHJ
               </h2>
-              <p className=" pt-6">
+              <p className="pt-6 2xl:text-lg">
                 &emsp; “Ansor Safety” MCHJ 2023-yil 12-iyundagi №21091874-sonli
                 guvohnomaga muvofiq tashkil etilgan bo‘lib, faoliyatini asosan
                 avtotransport va mashinasozlik mahsulotlarini sinovlari va
                 sertifikatlashtirish ishlariga qaratilgan.
               </p>
-              <p>
+              <p className="2xl:text-lg">
                 &emsp;“Ansor Safety” MCHJ qoshidagi sinov laboratoriyalar
                 majmuasi O‘zbekiston Respublikasi Milliy akkreditatsiya tizimida
                 O&apos;ZAK.SL.0342-sonli reestr raqami bilan O‘zDSt ISO/IEC
@@ -44,7 +44,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="lg:block hidden xl:h-[320px] 2xl:h-[350px] border-2 border-gray-300 p-2 rounded-2xl">
+            <div className="lg:block hidden xl:h-[320px] 2xl:h-[350px] border-2 border-gray-300 p-2 rounded-2xl text-lg">
               <Image
                 src={Img2}
                 alt="Ansor Safety"

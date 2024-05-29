@@ -6,7 +6,7 @@ import Certificate from "@/assets/images/certificate-degree-diploma-svgrepo-com.
 export default function Services() {
   return (
     <section id="services">
-      <div className="container mx-auto py-14">
+      <div className="container mx-auto py-14 px-2">
         <div className="py-8 text-center">
           <h2 className=" uppercase text-2xl lg:text-4xl font-semibold">
             Bizning xizmatlarimiz
@@ -16,7 +16,7 @@ export default function Services() {
           </p>
         </div>
         <div className="flex gap-10 justify-evenly pt-5 max-lg:flex-col">
-          <div className="flex justify-center flex-col items-center gap-5 lg:w-1/3">
+          <div className="flex justify-center flex-col items-center gap-5 lg:w-1/2 border border-gray-300 rounded-lg  py-5 px-2">
             <div className="w-36 h-36 rounded-full flex justify-center items-center bg-primary bg-opacity-50 shadow-lg">
               <Certificate />
             </div>
@@ -25,7 +25,7 @@ export default function Services() {
               muvofiqligini tasdiqlash
             </p>
           </div>
-          <div className="flex justify-center flex-col items-center gap-2 lg:w-1/3">
+          <div className="flex justify-center flex-col items-center gap-2 lg:w-1/2 border border-gray-300 rounded-lg py-5 px-2">
             <div className="w-36 h-36 rounded-full flex justify-center items-center bg-secondly bg-opacity-50 shadow-lg">
               <Consulting />
             </div>

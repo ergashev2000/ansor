@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Goal from "@/components/Goal";
 import Services from "@/components/Services";
 import React from "react";
+import Map from "@/components/Map";
 
 export default function page() {
   return (
@@ -17,6 +18,7 @@ export default function page() {
       <Services />
       <Gallery />
       <Contact />
+      <Map />
     </main>
   );
 }

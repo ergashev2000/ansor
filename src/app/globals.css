@@ -14,6 +14,7 @@ html {
     scroll-behavior: smooth
 }
 
+
 .hero_bg_img {
     background: url('../assets/images/bg.webp') no-repeat top center;
     background-size: cover;
@@ -137,4 +138,12 @@ background: linear-gradient(167deg, rgba(255, 255, 255, 1) 16%, rgba(224, 224, 2
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

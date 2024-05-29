@@ -48,9 +48,9 @@ export default function Gallery() {
 
   return (
     <section id="gallery">
-      <div className="container mx-auto py-10 lg:py-20">
-        <div className="py-5">
-          <h2 className="text-4xl font-semibold text-center uppercase">
+      <div className="container mx-auto px-2 pt-10 pb-16 lg:py-20">
+        <div className="py-8">
+          <h2 className="text-4xl font-semibold text-center uppercase text-primary">
             Gallery
           </h2>
         </div>

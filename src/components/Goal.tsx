@@ -43,9 +43,9 @@ const services = [
 export default function Goal() {
   return (
     <section className="py-14" id="goal">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-2 py-5">
         <div className="pb-14 space-y-4 text-center mx-auto">
-          <h2 className=" text-2xl lg:text-4xl font-semibold uppercase text-center">
+          <h2 className=" text-2xl lg:text-4xl font-semibold uppercase text-center text-primary">
             ASOSIY MAQSADIMIZ
           </h2>
           <p>

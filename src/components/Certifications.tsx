@@ -6,14 +6,14 @@ import Certification from "@/assets/images/Аккредитация гувоҳн
 export default function Certifications() {
   return (
     <section id="certificate">
-      <div className="container mx-auto py-10 lg:py-20">
-        <div className="py-5">
-          <h2 className="text-3xl lg:text-4xl font-semibold text-center uppercase">
+      <div className="container mx-auto px-2 py-10 lg:py-20">
+        <div className="py-2">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-center uppercase text-primary">
             Akkreditatsiya
           </h2>
         </div>
         <div className="flex items-center gap-5 max-lg:flex-col">
-          <div className="lg:w-1/2 space-y-2 lg:space-y-6 p-5">
+          <div className="lg:w-1/2 space-y-2 lg:space-y-4">
             <h3 className="lg:text-3xl font-semibold">
               Avtomobillarni sinov qiluvchi laboratoriya Akkreditatsiyasi
             </h3>
