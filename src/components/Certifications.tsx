@@ -8,7 +8,7 @@ export default function Certifications() {
     <section id="certificate">
       <div className="container mx-auto py-10 lg:py-20">
         <div className="py-5">
-          <h2 className="text-3xl lg:text-4xl font-semibold text-center">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-center uppercase">
             Akkreditatsiya
           </h2>
         </div>

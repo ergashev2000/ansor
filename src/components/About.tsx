@@ -7,7 +7,7 @@ import Img2 from "@/assets/images/img/10.jpg";
 export default function About() {
   return (
     <section id="about">
-      <div className="container mx-auto py-10 lg:py-14">
+      <div className="container mx-auto py-10 lg:py-14 mt-8">
         <div>
           <h2 className="text-2xl lg:text-4xl font-semibold text-center py-10">
             KOMPANIYA HAQIDA

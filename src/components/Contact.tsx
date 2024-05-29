@@ -125,7 +125,7 @@ export default function Contact() {
                   <div className="flex flex-col gap-1">
                     <label htmlFor="phone">Telefon raqam</label>
                     <input
-                      type="text"
+                      type="number"
                       id="phone"
                       value={formData.phone}
                       onChange={handleChange}
