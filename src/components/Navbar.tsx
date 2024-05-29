@@ -1,9 +1,12 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
+import Logo from "@/assets/images/logo.png";
 
 const menus = [
   {
@@ -40,33 +43,40 @@ const menus = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const pathname = usePathname();
+  const [hash, setHash] = useState(1);
 
   const handleOpenMenu = () => {
     setIsOpen(prev => !prev);
   };
 
+
   return (
     <header className="container mx-auto fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full">
       <div className="relative">
-        <div className="backdrop-blur bg-black/40 filter w-full flex justify-between items-center rounded-sm lg:rounded-full p-3 lg:mt-2 max-lg:py-5">
-          <Link href={"/"}>
-            <span className="text-lg font-semibold text-white uppercase pl-2 lg:pl-5">
-              LOGO
-            </span>
+        <div className="backdrop-blur bg-black/10 filter w-full flex justify-between items-center rounded-sm lg:rounded-full pr-2 lg:mt-2 max-lg:py-5">
+          <Link href="/">
+            <div className="h-16">
+              <Image
+                src={Logo}
+                alt="Ansor logo"
+                width={400}
+                height={400}
+                className="w-full h-full object-contain"
+              />
+            </div>
           </Link>
-          <nav className="max-lg:hidden">
+          <nav className="max-lg:hidden py-2">
             <ul className="text-sm uppercase flex items-center gap-3 2xl:gap-5 text-white">
               {menus.map(menu => (
                 <li key={menu.id}>
                   <Link href={menu.slug}>
                     <div
-                      className={`hover:bg-white/20 backdrop-blur xl:text-xs 2xl:text-base px-4 py-2 rounded-full transition-all duration-300 ${
-                        pathname === menu.slug
-                          ? "bg-primary hover:bg-primary hover:opacity-70"
+                      className={`backdrop-blur xl:text-xs 2xl:text-base px-4 py-2 rounded-full transition-all duration-300 ${
+                      menu.id === hash
+                          ? "bg-primary hover:opacity-70"
                           : ""
                       }`}
+                      onClick={() => setHash(menu.id)}
                     >
                       {menu.title}
                     </div>
@@ -99,6 +109,7 @@ export default function Navbar() {
                 <Link href={menu.slug}>
                   <div
                     className={`p-5 py-2 rounded-full transition-all duration-300`}
+                    onClick={() => setIsOpen(false)}
                   >
                     {menu.title}
                   </div>

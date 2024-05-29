@@ -112,7 +112,7 @@ export default function Contact() {
                     Sizga qanday yordam bera olamiz?
                   </h3>
                   <div className="flex flex-col gap-1">
-                    <label htmlFor="name">Ism va familiyangiz</label>
+                    <label htmlFor="name">Ism va Familiyaingiz</label>
                     <input
                       type="text"
                       id="name"
@@ -143,7 +143,7 @@ export default function Contact() {
                       onChange={handleChange}
                       className="rounded-lg px-4 py-2 w-full bg-white/10 backdrop-blur filter border border-gray-500"
                       required
-                    ></textarea>
+                    />
                   </div>
                   <button
                     type="submit"

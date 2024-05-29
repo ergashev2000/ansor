@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Consulting from "@/assets/images/consulting-message-svgrepo-com.svg";
 import Certificate from "@/assets/images/certificate-degree-diploma-svgrepo-com.svg";
@@ -12,7 +11,7 @@ export default function Services() {
             Bizning xizmatlarimiz
           </h2>
           <p className="text-sm lg:text-lg">
-            Ansor Safety MChJ sizga quyidagi xizmatlar turlarini taklif etadi:
+            Ansor Safety MChJ sizga quyidagi xizmat turlarini taklif etadi
           </p>
         </div>
         <div className="flex gap-10 justify-evenly pt-5 max-lg:flex-col">
