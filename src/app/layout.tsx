@@ -9,14 +9,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 export async function generateMetadata() {
   return {
-    metadataBase: new URL("https://www.site.uz/"),
-    title: "ANSOR SAFETY",
+    metadataBase: new URL("https://www.ansorsafety.uz/"),
+    title: "Ansor safety",
     description:
       "Ansor Safety MCHJ - avtotransport va mashinasozlik mahsulotlarini sinovlari va sertifikatlashtirish ishlarini bajaradi.",
     keywords: [
       "Ansor Safety",
-      "avtotransport va mashinasozlik mahsulotlarini sinovlari",
-      "sertifikatlashtirish",
+      "Avtotransport va mashinasozlik mahsulotlarini sinovlari",
+      "Sertifikatlashtirish",
     ],
   };
 }

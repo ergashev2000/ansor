@@ -23,8 +23,8 @@ export default function Contact() {
     const { name, phone, msg } = formData;
     const message = `Name: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
 
-    const telegramApiUrl = `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage`;
-    const chatId = "<YOUR_CHAT_ID>";
+    const telegramApiUrl = `https://api.telegram.org/bot7237585488:AAFZ_JbYJCOoZj5bzsCuYoVC0x1RoHp3080/sendMessage`;
+    const chatId = "50939909";
 
     try {
       const response = await fetch(telegramApiUrl, {
@@ -147,9 +147,9 @@ export default function Contact() {
                   </div>
                   <button
                     type="submit"
-                    className="bg-primary text-white font-bold py-3 px-10 rounded-lg cursor-pointer"
+                    className="bg-primary text-white font-bold py-3 px-10 rounded-lg cursor-pointer active:opacity-80 transition-all duration-300"
                   >
-                    Send
+                    Yuborish
                   </button>
                 </form>
               </div>

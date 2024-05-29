@@ -8,12 +8,12 @@ const links = [
   {
     id: 1,
     icon: <Instagram />,
-    url: "http://instagram.com",
+    url: "https://www.instagram.com/ansorsafety2024/",
   },
   {
     id: 2,
     icon: <Youtube />,
-    url: "http://toutube.com",
+    url: "http://youtube.com",
   },
   {
     id: 3,
