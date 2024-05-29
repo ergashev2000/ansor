@@ -9,7 +9,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <>
+    <main>
       <Hero />
       <About />
       <Certifications />
@@ -17,6 +17,6 @@ export default function page() {
       <Services />
       <Gallery />
       <Contact />
-    </>
+    </main>
   );
 }
