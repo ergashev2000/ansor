@@ -2,8 +2,6 @@ import { FacebookIcon, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-import Telegram from "@/assets/images/icons8-telegram.svg";
-
 const links = [
   {
     id: 1,
@@ -20,11 +18,6 @@ const links = [
     icon: <FacebookIcon />,
     url: "http://facebook.com",
   },
-  {
-    id: 4,
-    icon: <Telegram />,
-    url: "http://telegram.me",
-  },
 ];
 
 export default function Footer() {
@@ -32,7 +25,7 @@ export default function Footer() {
     <footer>
       <div className="bg-black w-full py-5">
         <div className="container mx-auto flex justify-between items-center max-lg:flex-col-reverse max-lg:gap-4 max-lg:px-2">
-          <p className="text-white font-semibold text-sm">
+          <p className="text-white font-medium text-sm">
             © 2024 · “Ansor Safety” MCHJ
           </p>
           <ul className="flex items-center gap-4 text-xs">
@@ -41,7 +34,7 @@ export default function Footer() {
             </li>
             {links.map(link => (
               <li key={link.id}>
-                <Link href={link.url}>
+                <Link href={link.url} target="_blank">
                   <div className="bg-white hover:text-white flex justify-center items-center rounded shadow-sm border w-7 h-7 border-gray-300 hover:bg-transparent transition-all duration-300">
                     {link.icon}
                   </div>

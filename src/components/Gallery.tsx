@@ -75,13 +75,12 @@ export default function Gallery() {
             </div>
           ))}
         </CustomSwiper>
-
         {selectedImage && (
           <div
             className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
             onClick={handleClose}
           >
-            <div className="">
+            <div>
               <button
                 className="absolute top-0 right-0 mt-2 mr-5 text-white text-5xl"
                 onClick={handleClose}
@@ -93,6 +92,7 @@ export default function Gallery() {
                 alt={selectedImage.title}
                 width={1000}
                 height={1000}
+                loading="lazy"
                 className="max-w-full max-h-full object-contain"
               />
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Consulting from "@/assets/images/consulting-message-svgrepo-com.svg";
 import Certificate from "@/assets/images/certificate-degree-diploma-svgrepo-com.svg";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -17,7 +18,7 @@ export default function Services() {
         <div className="flex gap-10 justify-evenly pt-5 max-lg:flex-col">
           <div className="flex justify-center flex-col items-center gap-5 lg:w-1/2 border border-gray-300 rounded-lg  py-5 px-2">
             <div className="w-36 h-36 rounded-full flex justify-center items-center bg-primary bg-opacity-50 shadow-lg">
-              <Certificate />
+              <Image src={Certificate} alt="Image" width={200} height={200} />
             </div>
             <p className="text-center text-lg">
               Laboratoriya sinovlari orqali metallurgiya mahsulotlarining
@@ -26,7 +27,7 @@ export default function Services() {
           </div>
           <div className="flex justify-center flex-col items-center gap-2 lg:w-1/2 border border-gray-300 rounded-lg py-5 px-2">
             <div className="w-36 h-36 rounded-full flex justify-center items-center bg-secondly bg-opacity-50 shadow-lg">
-              <Consulting />
+              <Image src={Consulting} alt="Image" width={200} height={200} />
             </div>
             <p className="text-center text-lg">
               O‘zbekiston Respublikasining ishlab chiqarish korxonalariga

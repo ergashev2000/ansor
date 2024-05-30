@@ -11,32 +11,32 @@ const services = [
   {
     id: 1,
     title: "Sertifikatlash",
-    icon: <Certificate />,
+    icon: Certificate,
   },
   {
     id: 2,
     title: "Tekshirish",
-    icon: <Check />,
+    icon: Check,
   },
   {
     id: 3,
     title: "Arbitraj",
-    icon: <Lifebuoy />,
+    icon: Lifebuoy,
   },
   {
     id: 4,
     title: "Pudratchilar",
-    icon: <Briefcase />,
+    icon: Briefcase,
   },
   {
     id: 5,
     title: "Laboratoriyalar",
-    icon: <Flask />,
+    icon: Flask,
   },
   {
     id: 6,
     title: "Qabul qilish",
-    icon: <Clipboard />,
+    icon: Clipboard,
   },
 ];
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import Certification from "@/assets/images/Аккредитация гувоҳномаси-1.webp";
+import Certification from "@/assets/images/certification.webp";
 
 export default function Certifications() {
   return (
@@ -32,7 +32,7 @@ export default function Certifications() {
             <div className="w-[350px]">
               <Image
                 src={Certification}
-                alt="img"
+                alt="certification image"
                 width={800}
                 height={800}
                 className="w-full h-full"

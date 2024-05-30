@@ -7,13 +7,9 @@
 @import "swiper/css/pagination";
 @import "swiper/css/effect-fade";
 
-@import 'animate.css';
-
-
 html {
     scroll-behavior: smooth
 }
-
 
 .hero_bg_img {
     background: url('../assets/images/bg.webp') no-repeat top center;
@@ -51,8 +47,6 @@ background: linear-gradient(167deg, rgba(255, 255, 255, 1) 16%, rgba(224, 224, 2
     top: 0;
     left: 0;
 }
-
-
 
 .swiper-wrapper {
     transition-timing-function: linear !important;
@@ -106,10 +100,7 @@ background: linear-gradient(167deg, rgba(255, 255, 255, 1) 16%, rgba(224, 224, 2
 
 .swiper-button-disabled {
     opacity: 0 !important;
-}  
-
-
-
+}
 
 /* Gallery.module.css */
 .lightbox {
@@ -139,8 +130,6 @@ background: linear-gradient(167deg, rgba(255, 255, 255, 1) 16%, rgba(224, 224, 2
     border-radius: 50%;
     cursor: pointer;
 }
-
-
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

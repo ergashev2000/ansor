@@ -21,32 +21,35 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const { name, phone, msg } = formData;
-    const message = `Ism va Familiya: ${name}\Telefon raqam: ${phone}\nXabar: ${msg}`;
+    const message = `Ism va Familiya: ${name}\nTelefon raqam: ${phone}\nXabar: ${msg}`;
 
     const telegramApiUrl = `https://api.telegram.org/bot7237585488:AAFZ_JbYJCOoZj5bzsCuYoVC0x1RoHp3080/sendMessage`;
-    const chatId = "50939909";
+    const chatIds = ["50939909", "5247612742"];
 
     try {
-      const response = await fetch(telegramApiUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          chat_id: chatId,
-          text: message,
-        }),
-      });
+      const requests = chatIds.map(chatId =>
+        fetch(telegramApiUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: message,
+          }),
+        })
+      );
 
-      if (response.ok) {
+      const responses = await Promise.all(requests);
+
+      if (responses.every(response => response.ok)) {
         alert("Message sent successfully");
         setFormData({ name: "", phone: "", msg: "" });
       } else {
-        alert("Failed to send message");
+        alert("Failed to send message to one or more chats");
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      alert("Error sending message");
     }
   };
 
@@ -56,7 +59,7 @@ export default function Contact() {
         <div className="lg:rounded-3xl overflow-hidden bg_contact relative">
           <div className="lg:p-10 p-2 py-8 text-white relative flex gap-7 max-lg:flex-col">
             <div className="lg:w-1/2 flex flex-col justify-center">
-              <h2 className=" text-2xl lg:text-3xl font-bold mb-2 uppercase">
+              <h2 className="text-2xl lg:text-3xl font-bold mb-2 uppercase">
                 Biz bilan bog&apos;lanish
               </h2>
               <p className="mb-6">
@@ -68,7 +71,7 @@ export default function Contact() {
               <div>
                 <ul className="space-y-2 lg:space-y-5">
                   <li className="flex gap-3 items-center">
-                    <div className=" min-w-[2rem] h-8 rounded-full border border-gray-300 flex items-center justify-center">
+                    <div className="min-w-[2rem] h-8 rounded-full border border-gray-300 flex items-center justify-center">
                       <Map className="text-gray-300" />
                     </div>
                     <div className="text-white">

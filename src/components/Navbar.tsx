@@ -3,7 +3,6 @@
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 import Logo from "@/assets/images/logo.png";
@@ -21,7 +20,7 @@ const menus = [
   },
   {
     id: 5,
-    title: "BIZNING MAQSADIMIZ",
+    title: "Bizning maqsad",
     slug: "#goal",
   },
   {
@@ -125,14 +124,14 @@ export default function Navbar() {
             </ul>
           </nav>
         </div>
-        <nav className="">
+        <nav>
           <button
             className="absolute right-2 top-1/2 -translate-y-1/2 text-black lg:hidden"
             onClick={handleOpenMenu}
           >
             <Menu size={44} />
           </button>
-          <ul
+          <div
             className={`uppercase flex-col flex justify-center transition-all duration-500 items-center gap-5 text-2xl text-center h-screen w-full bg-black text-white absolute top-0 left-0 pt-10 ${
               !isOpen ? "-translate-y-[calc(100%+20px)]" : "-translate-y-0"
             }`}
@@ -144,7 +143,7 @@ export default function Navbar() {
               <X size={50} />
             </button>
             {menus.map(menu => (
-              <li key={menu.id}>
+              <div key={menu.id}>
                 <Link href={menu.slug}>
                   <div
                     className={`p-5 py-2 rounded-full transition-all duration-300`}
@@ -153,9 +152,9 @@ export default function Navbar() {
                     {menu.title}
                   </div>
                 </Link>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </nav>
       </div>
     </header>

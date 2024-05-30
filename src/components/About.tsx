@@ -20,6 +20,7 @@ export default function About() {
               alt="Ansor Safety"
               width={700}
               height={700}
+              loading="lazy"
               className="rounded-xl object-cover w-full h-full"
             />
           </div>
@@ -50,6 +51,7 @@ export default function About() {
                 alt="Ansor Safety"
                 width={600}
                 height={600}
+                loading="lazy"
                 className="rounded-xl w-full h-full object-cover "
               />
             </div>
