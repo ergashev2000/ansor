@@ -26,10 +26,10 @@ export default function Certifications() {
               me&apos;yorlarga mosligini sinovlardan o&apos;tkaziladi. Tajribali
               mutaxassislar jamoamiz har bir sinovni aniq va ishonchli,
               shuningdek, natijalarni batafsil tahlil qilib, mijozlarimizga
-              to&apos;liq hulosa taqdim etadi.
+              to&apos;liq xulosa taqdim etadi.
             </p>
 
-            <div className="flex items-center gap-5 max-lg:flex-col max-lg:gap-2 pt-4">
+            <div className="flex items-center justify-between gap-5 max-lg:flex-col max-lg:gap-2 pt-4">
               <Link href="https://akkred.uz/" className="block w-full">
                 <div className="py-2 rounded-lg px-6 border border-primary w-fit max-lg:w-full text-center max-lg:py-5">
                   Milliy akkreditatsiya reestri
