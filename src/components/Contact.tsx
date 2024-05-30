@@ -99,7 +99,7 @@ export default function Contact() {
                     </div>
                     <div className="text-white">
                       <h4 className="font-semibold text-lg">E-mail:</h4>
-                      <Link href={"mailto:ansorqs@gmail.com"} target="_blank">
+                      <Link href={"mailto:ansorqs@gmail.com"} target="_blank" >
                         ansorqs@gmail.com
                       </Link>
                     </div>

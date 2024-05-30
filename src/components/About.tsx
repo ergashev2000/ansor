@@ -10,7 +10,7 @@ export default function About() {
       <div className="container mx-auto py-10 px-2 lg:pb-14 lg:pt-20">
         <div>
           <h2 className="text-2xl lg:text-4xl font-semibold text-center py-10 text-primary">
-            KOMPANIYA HAQIDA
+            KORXONA HAQIDA
           </h2>
         </div>
         <div className="flex gap-10 max-lg:flex-col items-start lg:h-[710px]">

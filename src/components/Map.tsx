@@ -12,8 +12,8 @@ export default function Map() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="w-full lg:rounded-xl max-lg:h-[400px]"
-        ></iframe>
+          className="w-full lg:rounded-xl max-lg:h-[400px] border-0"
+        />
       </div>
     </section>
   );

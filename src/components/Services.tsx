@@ -21,8 +21,8 @@ export default function Services() {
               <Image src={Certificate} alt="Image" width={200} height={200} />
             </div>
             <p className="text-center text-lg">
-              Laboratoriya sinovlari orqali metallurgiya mahsulotlarining
-              muvofiqligini tasdiqlash
+              Laboratoriya sinovlari orqali avtotransport va mashinasozlik
+              mahsulotlarining muvofiqligini tasdiqlash
             </p>
           </div>
           <div className="flex justify-center flex-col items-center gap-2 lg:w-1/2 border border-gray-300 rounded-lg py-5 px-2">
@@ -30,8 +30,8 @@ export default function Services() {
               <Image src={Consulting} alt="Image" width={200} height={200} />
             </div>
             <p className="text-center text-lg">
-              O‘zbekiston Respublikasining ishlab chiqarish korxonalariga
-              mahsulot sifati bo‘yicha konsalting xizmatlarini ko‘rsatish
+              O‘zbekiston Respublikasida ishlab chiqarish korxonalariga mahsulot
+              sifati bo‘yicha konsalting xizmatlarini ko‘rsatish
             </p>
           </div>
         </div>

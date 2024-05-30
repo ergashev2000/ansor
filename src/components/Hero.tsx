@@ -10,7 +10,10 @@ import { Phone } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="hero_bg_img h-screen w-full flex items-center relative">
+    <section
+      className="hero_bg_img h-screen w-full flex items-center relative"
+      id="home"
+    >
       <div className="w-full h-fit bg-[#0A1C37] py-2 shadow-md absolute bottom-0 left-1/2 -translate-x-1/2">
         <ul className="container mx-auto flex items-center justify-around py-2 text-white max-lg:hidden">
           <li className="flex items-center gap-2">

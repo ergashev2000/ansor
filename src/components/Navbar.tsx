@@ -11,7 +11,7 @@ const menus = [
   {
     id: 1,
     title: "Bosh sahifa",
-    slug: "/",
+    slug: "#home",
   },
   {
     id: 2,
@@ -111,8 +111,8 @@ export default function Navbar() {
                     <div
                       className={`backdrop-blur xl:text-xs 2xl:text-base px-4 py-2 rounded-full transition-all duration-300 ${
                         menu.id === hash
-                          ? "bg-primary hover:opacity-70"
-                          : "bg-black/50"
+                          ? "bg-primary"
+                          : "bg-black/50 hover:bg-black/30"
                       }`}
                       onClick={() => setHash(menu.id)}
                     >
@@ -124,7 +124,7 @@ export default function Navbar() {
             </ul>
           </nav>
         </div>
-        <nav>
+        <div>
           <button
             className="absolute right-2 top-1/2 -translate-y-1/2 text-black lg:hidden"
             onClick={handleOpenMenu}
@@ -155,7 +155,7 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-        </nav>
+        </div>
       </div>
     </header>
   );
