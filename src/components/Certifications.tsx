@@ -31,7 +31,7 @@ export default function Certifications() {
 
             <div className="flex items-center gap-5 max-lg:flex-col max-lg:gap-2 pt-4">
               <Link href="https://akkred.uz/" className="block w-full">
-                <div className="py-2 rounded-lg px-6 border border-primary w-fit max-lg:w-full text-center">
+                <div className="py-2 rounded-lg px-6 border border-primary w-fit max-lg:w-full text-center max-lg:py-5">
                   Milliy akkreditatsiya reestri
                 </div>
               </Link>
@@ -42,7 +42,7 @@ export default function Certifications() {
                 target="_blank"
                 className="block w-full"
               >
-                <div className="py-2 rounded-lg px-6 max-lg:w-full text-center bg-primary hover:bg-transparent border border-primary transition-all duration-300 w-fit text-white hover:text-black">
+                <div className="py-2 rounded-lg px-6 max-lg:w-full text-center bg-primary hover:bg-transparent border border-primary transition-all duration-300 w-fit text-white hover:text-black max-lg:py-5">
                   Akkreditatsiya o&lsquo;tkazish sohasi
                 </div>
               </Link>
