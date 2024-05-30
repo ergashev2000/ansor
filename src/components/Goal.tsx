@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceCard from './GoalCard'
+
 import Certificate from "@/assets/images/iconmonstr-certificate-6.svg";
 import Check from "@/assets/images/iconmonstr-check-mark-6.svg";
 import Lifebuoy from "@/assets/images/iconmonstr-lifebuoy-6.svg";

@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
+import Image from 'next/image'
 
 import Img from '@/assets/images/img/6.jpg'
 import Img2 from "@/assets/images/img/10.jpg";

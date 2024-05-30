@@ -1,8 +1,8 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 import Certification from "@/assets/images/certification.webp";
-import Link from "next/link";
 
 export default function Certifications() {
   return (
@@ -28,9 +28,12 @@ export default function Certifications() {
               shuningdek, natijalarni batafsil tahlil qilib, mijozlarimizga
               to&apos;liq xulosa taqdim etadi.
             </p>
-
             <div className="flex items-center justify-between gap-5 max-lg:flex-col max-lg:gap-2 pt-4">
-              <Link href="https://akkred.uz/" className="block w-full">
+              <Link
+                href="https://akkred.uz/reestr?page=1&typeOrgan=5&region=&searchInn=310552795"
+                className="block w-full"
+                target="_blank"
+              >
                 <div className="py-2 rounded-lg px-6 border border-primary w-fit max-lg:w-full text-center max-lg:py-5">
                   Milliy akkreditatsiya reestri
                 </div>

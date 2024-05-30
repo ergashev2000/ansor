@@ -1,6 +1,6 @@
-import { FacebookIcon, Instagram, Youtube } from "lucide-react";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import { FacebookIcon, Instagram, Youtube } from "lucide-react";
 
 const links = [
   {

@@ -18,7 +18,13 @@ export default function Hero() {
         <ul className="container mx-auto flex items-center justify-around py-2 text-white max-lg:hidden">
           <li className="flex items-center gap-2">
             <div>
-              <Image src={Money} alt="Image" width={50} height={50} />
+              <Image
+                src={Money}
+                alt="Image"
+                width={50}
+                height={50}
+                loading="lazy"
+              />
             </div>
             <div>
               <h3 className="font-semibold text-xl text-secondly">
@@ -28,7 +34,13 @@ export default function Hero() {
           </li>
           <li className="flex items-center gap-2">
             <div>
-              <Image src={Guarantee} alt="Image" width={50} height={50} />
+              <Image
+                src={Guarantee}
+                alt="Image"
+                width={50}
+                height={50}
+                loading="lazy"
+              />
             </div>
             <div>
               <h3 className="font-semibold text-xl text-secondly">Kafolat</h3>
@@ -36,7 +48,13 @@ export default function Hero() {
           </li>
           <li className="flex items-center gap-2">
             <div>
-              <Image src={Certificate} alt="Image" width={50} height={50} />
+              <Image
+                src={Certificate}
+                alt="Image"
+                width={50}
+                height={50}
+                loading="lazy"
+              />
             </div>
             <div>
               <h3 className="font-semibold text-xl text-secondly">

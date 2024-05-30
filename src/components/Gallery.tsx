@@ -41,11 +41,9 @@ type ImageData = {
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
-
   const handleClose = () => {
     setSelectedImage(null);
   };
-
   return (
     <section id="gallery">
       <div className="container mx-auto px-2 pt-10 pb-16 lg:py-20">

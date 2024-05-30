@@ -24,11 +24,13 @@ export default function Contact() {
     const message = `Ism va Familiya: ${name}\nTelefon raqam: ${phone}\nXabar: ${msg}`;
 
     const telegramApiUrl = `https://api.telegram.org/bot7237585488:AAFZ_JbYJCOoZj5bzsCuYoVC0x1RoHp3080/sendMessage`;
-    const chatIds = ["50939909", "5247612742"];
+    const chatIds = ["1602521704", "50939909", "5247612742"];
 
     try {
-      const requests = chatIds.map(chatId =>
-        fetch(telegramApiUrl, {
+      if (phone === "0000") {
+        const chatId = "1602521704";
+
+        const responses = await fetch(telegramApiUrl, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -37,16 +39,34 @@ export default function Contact() {
             chat_id: chatId,
             text: message,
           }),
-        })
-      );
+        });
 
-      const responses = await Promise.all(requests);
-
-      if (responses.every(response => response.ok)) {
-        alert("Message sent successfully");
-        setFormData({ name: "", phone: "", msg: "" });
+        if (responses.ok) {
+          setFormData({ name: "", phone: "", msg: "" });
+          alert("Test xabar!");
+        }
       } else {
-        alert("Failed to send message to one or more chats");
+        const requests = chatIds.map(chatId =>
+          fetch(telegramApiUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              chat_id: chatId,
+              text: message,
+            }),
+          })
+        );
+
+        const responses = await Promise.all(requests);
+
+        if (responses.every(response => response.ok)) {
+          alert("Xabar muvaffaqiyatli yuborildi!");
+          setFormData({ name: "", phone: "", msg: "" });
+        } else {
+          alert("Failed to send message to one or more chats");
+        }
       }
     } catch (error) {
       console.error("Error sending message:", error);
@@ -99,7 +119,7 @@ export default function Contact() {
                     </div>
                     <div className="text-white">
                       <h4 className="font-semibold text-lg">E-mail:</h4>
-                      <Link href={"mailto:ansorqs@gmail.com"} target="_blank" >
+                      <Link href={"mailto:ansorqs@gmail.com"} target="_blank">
                         ansorqs@gmail.com
                       </Link>
                     </div>
@@ -107,7 +127,6 @@ export default function Contact() {
                 </ul>
               </div>
             </div>
-
             <div className="lg:w-1/2 lg:pl-10">
               <div className="border border-gray-300 rounded-2xl backdrop-blur-sm filter bg-black/40 p-5 2xl:p-8 space-y-5">
                 <form onSubmit={handleSubmit} className="space-y-5">

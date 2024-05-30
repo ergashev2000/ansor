@@ -1,7 +1,8 @@
 import React from "react";
+import Image from "next/image";
+
 import Consulting from "@/assets/images/consulting-message-svgrepo-com.svg";
 import Certificate from "@/assets/images/certificate-degree-diploma-svgrepo-com.svg";
-import Image from "next/image";
 
 export default function Services() {
   return (
