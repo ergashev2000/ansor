@@ -29,9 +29,9 @@ export default function Certifications() {
               to&apos;liq hulosa taqdim etadi.
             </p>
 
-            <div className="flex items-center gap-5">
-              <Link href="https://akkred.uz/">
-                <div className="py-2 rounded-lg px-6 border border-primary w-fit">
+            <div className="flex items-center gap-5 max-lg:flex-col max-lg:gap-2 pt-4">
+              <Link href="https://akkred.uz/" className="block w-full">
+                <div className="py-2 rounded-lg px-6 border border-primary w-fit max-lg:w-full text-center">
                   Milliy akkreditatsiya reestri
                 </div>
               </Link>
@@ -40,8 +40,9 @@ export default function Certifications() {
                 download
                 rel="noopener noreferrer"
                 target="_blank"
+                className="block w-full"
               >
-                <div className="py-2 rounded-lg px-6 bg-primary hover:bg-transparent border border-primary transition-all duration-300 w-fit text-white hover:text-black">
+                <div className="py-2 rounded-lg px-6 max-lg:w-full text-center bg-primary hover:bg-transparent border border-primary transition-all duration-300 w-fit text-white hover:text-black">
                   Akkreditatsiya o&lsquo;tkazish sohasi
                 </div>
               </Link>
