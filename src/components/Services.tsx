@@ -13,7 +13,8 @@ export default function Services() {
             Bizning xizmatlarimiz
           </h2>
           <p className="text-sm lg:text-lg">
-            Ansor Safety MChJ sizga quyidagi xizmat turlarini taklif etadi
+            &#34;Ansor Safety&#34; MChJ sizga quyidagi xizmat turlarini taklif
+            etadi
           </p>
         </div>
         <div className="flex gap-10 justify-evenly pt-5 max-lg:flex-col">

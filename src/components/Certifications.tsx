@@ -10,7 +10,7 @@ export default function Certifications() {
       <div className="container mx-auto px-2 py-10 lg:py-20">
         <div className="py-2">
           <h2 className="text-3xl lg:text-4xl font-semibold text-center uppercase text-primary">
-            SINOV LABORATORIYALAR MAJMUASI
+            SINOV LABORATORIYALARI MAJMUASI
           </h2>
         </div>
         <div className="flex items-center gap-5 max-lg:flex-col">

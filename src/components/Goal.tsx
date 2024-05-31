@@ -50,11 +50,12 @@ export default function Goal() {
             ASOSIY MAQSADIMIZ
           </h2>
           <p>
-            Sinov laboratoriyasida zarur va etarli sharoitlarni yaratish va
-            ta&apos;minlash. Sinov ob&apos;ektlari to&apos;g&apos;risida
-            ishonchli, ob&apos;ektiv asoslangan ma&apos;lumotlarning o&apos;z
-            vaqtida olinishini ta&apos;minlash. Sinov laboratoriyasi sinov
-            sohasida quyidagi tadbirlarni amalga oshirishni rejalashtirmoqda:
+            Sinov laboratoriyasida zarur va yetarli sharoitlarni
+            yaratish va ta&apos;minlash. Sinov ob&apos;ektlari
+            to&apos;g&apos;risida ishonchli, ob&apos;ektiv asoslangan
+            ma&apos;lumotlarning o&apos;z vaqtida olinishini ta&apos;minlash.
+            Sinov laboratoriyasi sinov sohasida quyidagi tadbirlarni amalga
+            oshirishni rejalashtirmoqda:
           </p>
         </div>
         <div className="grid  grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
