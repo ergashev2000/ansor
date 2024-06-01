@@ -68,6 +68,7 @@ export default function Gallery() {
                 title={item.title}
                 width={700}
                 height={700}
+                loading="lazy"
                 className="object-cover w-full h-full "
               />
             </div>
@@ -88,6 +89,7 @@ export default function Gallery() {
               <Image
                 src={selectedImage.img}
                 alt={selectedImage.title}
+                title={selectedImage.title}
                 width={1000}
                 height={1000}
                 loading="lazy"

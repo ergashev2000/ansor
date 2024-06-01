@@ -16,20 +16,6 @@ export const metadata: Metadata = {
     canonical: "./",
   },
   referrer: "origin-when-cross-origin",
-  icons: {
-    icon: {
-      url: "/favicon.ico",
-      type: "image/ico",
-    },
-    shortcut: {
-      url: "/favicon.ico",
-      type: "image/ico",
-    },
-    apple: {
-      url: "/favicon.ico",
-      type: "image/ico",
-    },
-  },
   openGraph: {
     type: "website",
     url: "https://www.ansorsafety.uz",
